@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <stylesheets>
+      <URL value="@/css/style.css"/>
+   </stylesheets>
+   <center>
+      <HBox prefWidth="428.0">
+         <TextArea fx:id="TextArea" HBox.hgrow="ALWAYS" editable="false" />
+      </HBox>
+   </center>
+
+   <bottom>
+      <HBox>
+         <TextField fx:id="TextField" HBox.hgrow="ALWAYS" promptText="Введите сообщение" onAction="#Send"/>
+         <Button fx:id="btn" text="Отправить"  prefWidth="100" onAction="#Send"/>
+      </HBox>
+   </bottom>
+
+
+
+</BorderPane>
